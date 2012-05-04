@@ -1,11 +1,10 @@
 %define	oname	ufoai
 
 Name:		%{oname}-data
-Version:	2.3.1
+Version:	2.4
 Release:	1
 URL:		http://ufoai.sourceforge.net/
-Source0:	http://sourceforge.net/projects/ufoai/files/UFO_AI%202.x/%{version}/%{oname}-%{version}-data.tar
-Source1:	%{oname}-%{version}-data-1maps.pk3
+Source0:	http://prdownloads.sourceforge.net/%{oname}/%{oname}-%{version}-data.tar
 License:	GPLv2+ and CC-BY and CC-BY-SA and GFDL and MIT and Public Domain and Creative Commons Sampling Plus
 Group:		Games/Strategy
 Summary:	Data files for %{oname}
@@ -23,7 +22,6 @@ Data files needed to run %{oname}.
 %install
 mkdir -p %{buildroot}%{_gamesdatadir}/%{oname}
 tar -xf %{SOURCE0} -C %{buildroot}%{_gamesdatadir}/%{oname}
-install -m644 %{SOURCE1} %{buildroot}%{_gamesdatadir}/%{oname}/base/1maps.pk3
 
 %files
 %dir %{_gamesdatadir}/%{oname}
