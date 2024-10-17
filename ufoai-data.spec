@@ -3,7 +3,7 @@
 Name:		%{oname}-data
 Version:	2.4
 Release:	2
-URL:		http://ufoai.sourceforge.net/
+URL:		https://ufoai.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/%{oname}/%{oname}-%{version}-data.tar
 License:	GPLv2+ and CC-BY and CC-BY-SA and GFDL and MIT and Public Domain and Creative Commons Sampling Plus
 Group:		Games/Strategy
